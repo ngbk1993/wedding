@@ -1,0 +1,379 @@
+/* ---------- General Styles ---------- */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #fffaf8;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5em;
+}
+
+/* ---------- Navigation Bar ---------- */
+.navbar {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 1em 2em;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.nav-left {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.nav-scroll-wrapper {
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.nav-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  padding: 0.5em 0;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #c94e50;
+}
+
+.nav-links a.active {
+  color: #c94e50;
+  font-weight: bold;
+}
+/* ---------- Story Section ---------- */
+.story {
+  padding: 100px 20px 60px;
+  text-align: center;
+  background: #fff3f8;
+}
+
+.story h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.story p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* ---------- Timeline ---------- */
+.timeline-container {
+  position: relative;
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+.progress-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 0;
+  background: #e2b4bd;
+  transform: translateX(-50%);
+  z-index: 0;
+  transition: height 0.3s ease-out;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 60px 0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item.left .content {
+  order: 1;
+  margin-right: auto;
+  text-align: right;
+  /*transform-origin: top left; /* Newly added */
+}
+
+.timeline-item.right .content {
+  order: 2;
+  margin-left: auto;
+  text-align: left;
+  /*ransform-origin: top right; /* Newly added */
+}
+
+/* Newly added v1*/
+/*
+.timeline-item img {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;               
+  object-fit: cover;           
+  border-radius: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  margin: 1em 0;
+}
+*/
+
+/* newly added v2 */
+/*
+.timeline-item img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  margin: 1em 0;
+}
+*/
+
+/* Dot and Year on Progress Bar */
+.dot-block {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.dot {
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 4px solid #e06d88;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  box-shadow: 0 0 0 2px #e2b4bd;
+  transform: scale(0.7);
+  transition: transform 0.4s ease;
+}
+
+.timeline-item.visible .dot {
+  transform: scale(1);
+}
+
+.year {
+  margin-top: 6px;
+  font-size: 0.85em;
+  color: #c65b7c;
+}
+
+.timeline-item .content {
+  background: #fff;
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+   width: 45%; 
+  /*width: fit-content;*/
+  max-width: 90%;
+  z-index: 1;
+}
+
+/* ---------- Contact Section ---------- */
+.bride-groom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #fff3f8;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.bride-groom-section .person {
+  flex: 1 1 300px;
+  max-width: 45%;
+  margin: 20px;
+}
+
+.bride-groom-section .person img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 50%;
+  border: 4px solid #e06d88;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 1em;
+}
+
+.bride-groom-section .person h3 {
+  font-size: 1.5em;
+  color: #c65b7c;
+  margin-bottom: 0.5em;
+}
+
+.bride-groom-section .person p {
+  margin: 0.3em 0;
+  color: #444;
+}
+
+.bride-groom-section a {
+  color: #e06d88;
+  text-decoration: none;
+}
+
+.bride-groom-section a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .bride-groom-section {
+    flex-direction: column;
+  }
+
+  .bride-groom-section .person {
+    max-width: 90%;
+  }
+}
+
+/* ---------- RSVP Section ---------- */
+.rsvp-section {
+  padding: 80px 20px;
+  background: #fff3f8;
+  text-align: center;
+}
+
+.rsvp-section h2 {
+  color: #c65b7c;
+  margin-bottom: 1em;
+}
+
+#feedback-form {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+#feedback-form label {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
+  color: #444;
+}
+
+#feedback-form input,
+#feedback-form select,
+#feedback-form textarea {
+  width: 100%;
+  padding: 0.6em;
+  margin-top: 0.4em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+#feedback-form button {
+  margin-top: 1.5em;
+  background-color: #c65b7c;
+  color: white;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#feedback-form button:hover {
+  background-color: #e06d88;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 2em 0;
+  background: #fffaf8;
+  color: #aaa;
+  font-size: 0.95em;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .timeline-item .content {
+    width: 90%;
+  }
+
+  .dot-block {
+    position: relative;
+    transform: none;
+    left: auto;
+    margin-bottom: 10px;
+  }
+
+/*
+  .nav-links {
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 0.5em;
+  }
+*/
+  .navbar h1 {
+    margin-bottom: 0.5em;
+  }
+
+  #feedback-form {
+    padding: 1.5em;
+  }
+}
+
+/* ------ Music Button ----- */
+#music-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#music-toggle:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}

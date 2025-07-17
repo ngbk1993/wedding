@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Wedding Story</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Music -->
+  <!--
+  <audio controls autoplay>
+    <source src="music/perfect.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+   -->
+  <audio id="bg-music" autoplay loop>
+    <source src="music/perfect.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <button id="music-toggle" aria-label="Toggle Music">🔊</button>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class = "nav-left">💍 Our Wedding</div>
+    <div class = "nav-scroll-wrapper">
+      <div class="nav-links">
+        <a href="#story">Story</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#bride-groom">Contact</a>
+        <a href="#rsvp">RSVP</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Story -->
+  <section class="story" id="story">
+    <h2>Our Love Story</h2>
+    <p>
+      Our journey began in 2019 when we met at a music club — she played the violin, I played the guitar. What started with shared melodies soon turned into     shared dreams, laughter, and love. From not knowing each other to saying yes on a beach in Tioman, every chapter has brought us closer. Here’s a glimpse into our story.
+    </p>
+  </section>
+
+  <!-- Timeline -->
+  <section class="timeline-container" id="timeline">
+    <div class="progress-line" id="progress-line"></div>
+
+    <div class="timeline-item left">
+      <div class="dot-block">
+        <div class="dot">💬</div>
+        <div class="year">2019</div>
+      </div>
+      <div class="content">
+        <h3>First Meeting</h3>
+        <p><img src="images/event1.jpg" alt="First Meeting" />We met at a music club — she played the violin, I played the guitar. Music brought us together.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="dot-block">
+        <div class="dot">💍</div>
+        <div class="year">2023</div>
+      </div>
+      <div class="content">
+        <h3>The Proposal</h3>
+        <p><img src="images/event3.jpg" alt="Proposal" />During a getaway to Pulau Tioman, he proposed — and she said yes!</p>
+      </div>
+    </div>
+      
+    <div class="timeline-item left">
+      <div class="dot-block">
+        <div class="dot">✈️</div>
+        <div class="year">2024</div>
+      </div>
+      <div class="content">
+        <h3>Our First Trip</h3>
+        <p><img src="images/event2.jpg" alt="Trip" />We traveled to Japan, embraced the culture, and even dressed the part. It was a beautiful and unforgettable adventure.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="dot-block">
+        <div class="dot">🎉</div>
+        <div class="year">2024</div>
+      </div>
+      <div class="content">
+        <h3>ROM</h3>
+        <p><img src="images/event4_small.jpg" alt="ROM" />We celebrated our Registration of Marriage (ROM) and began our life as husband and wife.</p>
+      </div>
+    </div>
+      
+    <div class="timeline-item left">
+      <div class="dot-block">
+        <div class="dot">🍛</div>
+        <div class="year">2025 <br> Nov </div>
+      </div>
+      <div class="content">
+        <h3>Wedding Lunch at Triang</h3>
+        <p>
+            <img src="images/event5.jpg" alt="Lunch" />
+            Join us for our wedding lunch at Emperror City Restaurant (Triang)
+            <a href="https://maps.app.goo.gl/NhBShL1aFeL7tKD29" target="_blank" rel="noopener">
+                [Google Map Link]
+            </a>
+             <br> on 9th November 2025 12.00pm.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="dot-block">
+        <div class="dot">🍛</div>
+        <div class="year">2025 <br> Dec </div>
+      </div>
+      <div class="content">
+        <h3>Wedding Dinner At Kuching</h3>
+        <p>
+            <img src="images/event6.jpg" alt="Dinner" />
+            Join us for our wedding dinner at Boulevard Imperial Hotel Kuching (Kuching)
+            <a href="https://maps.app.goo.gl/CmEpRHC9SfNSa7MV7" target="_blank" rel="noopener">
+                [Google Map Link]
+            </a>
+            on 14th of December 2025 6.30pm.
+        </p>
+      </div>
+    </div>
+  </section>
+    
+  <!-- Contact -->
+<section id="bride-groom" class="bride-groom-section">
+  <div class="person left">
+    <img src="images/bride_small.jpg" alt="Bride Photo" />
+    <h3>Sje Yin</h3>
+    <!-- <p>Email: <a href="mailto:abc@example.com">abc@example.com</a></p> -->
+    <p>📱: <a href="tel:+60149126560">+60 14-912 6560</a></p>
+  </div>
+
+  <div class="person right">
+    <img src="images/groom_small.jpg" alt="Groom Photo" />
+    <h3>Boon Khai</h3>
+    <!-- <p>Email: <a href="mailto:abc@example.com">abc@example.com</a></p> -->
+    <p>📱: <a href="tel:+60186689275">+60 18-668 9275</a></p>
+  </div>
+</section>
+    
+  <!-- RSVP Form -->
+  <section class="rsvp-section" id="rsvp">
+    <h2>Will You Join Us? 💌</h2>
+    <form id="feedback-form">
+      <label>Name:</label>
+      <input type="text" name="name" required />
+
+      <label>Email (optional):</label>
+      <input type="email" name="email" />
+
+      <label>Venue:</label>
+      <select name="choice" required>
+        <option value="">-- Select --</option>
+        <option value="1">Triang</option>
+        <option value="2">Kuching</option>
+        <option value="3">Triang and Kuching</option>
+        <option value="4">Sorry, Not able to make it</option>
+      </select>
+
+      <label>Pax (Number of People):</label>
+      <input type="number" name="pax" min="1" required />
+
+      <label>Meal Preference:</label>
+      <select name="meal" required>
+        <option value="">-- Select --</option>
+        <option value="Non-Vege">Non-Vege</option>
+        <option value="Vege">Vege</option>
+      </select>
+
+      <label>Wishes:</label>
+      <textarea name="message" rows="4"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p style="text-align:center; padding: 2em;">Made with ❤️ by the happy couple</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
