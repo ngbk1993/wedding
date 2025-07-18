@@ -31,7 +31,8 @@
       </div>
     </div>
   </nav>
-
+<div class="page-container">
+  <!-- all your content here -->
   <!-- Story -->
   <section class="story" id="story">
     <h2>Our Love Story</h2>
@@ -155,14 +156,13 @@
       <label>Venue:</label>
       <select name="choice" required>
         <option value="">-- Select --</option>
-        <option value="1">Triang</option>
-        <option value="2">Kuching</option>
-        <option value="3">Triang and Kuching</option>
-        <option value="4">Sorry, Not able to make it</option>
+        <option value="Triang">Triang</option>
+        <option value="Kuching">Kuching</option>
+        <option value="Sorry, Not able to make it">Sorry, Not able to make it</option>
       </select>
 
       <label>Pax (Number of People):</label>
-      <input type="number" name="pax" min="1" required />
+      <input type="number" name="pax" min="1" max="10" required />
 
       <label>Meal Preference:</label>
       <select name="meal" required>
@@ -184,5 +184,6 @@
   </footer>
 
   <script src="script.js"></script>
+</div>
 </body>
 </html>
