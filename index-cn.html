@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>我们的爱情故事</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Music -->
+  <!--
+  <audio controls autoplay>
+    <source src="music/perfect.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+   -->
+  <audio id="bg-music" autoplay loop>
+    <source src="music/perfect.mp3" type="audio/mpeg">
+    你的浏览器不支持音乐播放.
+  </audio>
+  <button id="music-toggle" aria-label="Toggle Music">🔊</button>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class = "nav-left">💍 我们的婚礼</div>
+    <div class = "nav-scroll-wrapper">
+      <div class="nav-links">
+        <a href="#story">故事</a>
+        <a href="#timeline">时间线</a>
+        <a href="#bride-groom">联系我们</a>
+        <a href="#rsvp">回覆我们</a>
+      </div>
+    </div>
+  </nav>
+<div class="page-container">
+  <!-- all your content here -->
+  <!-- Story -->
+  <section class="story" id="story">
+    <h2>我们的爱情故事</h2>
+    <p>
+      我们的故事始于 2019 年，那年我们在一个音乐社相遇——她拉小提琴，我弹吉他。
+最初是旋律的交汇，渐渐谱成了共同的梦想、欢笑与爱情。
+从彼此陌生，到在刁曼岛的沙滩上说出“我愿意”，每一段旅程都拉近了我们的心。
+欢迎走进我们的故事，一起回顾这段美好的旅程。
+    </p>
+  </section>
+
+  <!-- Timeline -->
+  <section class="timeline-container" id="timeline">
+    <div class="progress-line" id="progress-line"></div>
+
+    <div class="timeline-item left">
+      <div class="dot-block">
+        <div class="dot">💬</div>
+        <div class="year">2019</div>
+      </div>
+      <div class="content">
+        <h3>第一次相遇</h3>
+        <p><img src="images/event1.jpg" alt="First Meeting" />我们在一个音乐社团相识——她拉小提琴，我弹吉他。
+音乐让我们相遇，也让彼此靠得更近。</p>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="dot-block">
+        <div class="dot">💍</div>
+        <div class="year">2023</div>
+      </div>
+      <div class="content">
+        <h3>求婚</h3>
+        <p><img src="images/event3.jpg" alt="Proposal" />在一次刁曼岛的旅行中，他向她求婚——而她答应了！</p>
+      </div>
+    </div>
+      
+    <div class="timeline-item left">
+      <div class="dot-block">
+        <div class="dot">✈️</div>
+        <div class="year">2024</div>
+      </div>
+      <div class="content">
+        <h3>我们的第一次旅行</h3>
+        <p><img src="images/event2.jpg" alt="Trip" />我们走进日本，穿上和服、体验风情，一起沉浸在文化的底蕴里。这段旅程，成了我们记忆中最动人的一页。</p>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="dot-block">
+        <div class="dot">🎉</div>
+        <div class="year">2024</div>
+      </div>
+      <div class="content">
+        <h3>婚书签署仪式</h3>
+        <p><img src="images/event4_small.jpg" alt="ROM" />我们在注册仪式上签下承诺，携手迈入人生新篇章，正式成为彼此的丈夫与妻子。</p>
+      </div>
+    </div>
+      
+    <div class="timeline-item left">
+      <div class="dot-block">
+        <div class="dot">🍛</div>
+        <div class="year">2025 <br> Nov </div>
+      </div>
+      <div class="content">
+        <h3>直凉婚礼午宴</h3>
+        <p>
+            <img src="images/event5.jpg" alt="Lunch" />
+            诚邀您出席我们的婚礼午宴，地点为直凉皇城酒家（Emperror City Restaurant）。
+            <a href="https://maps.app.goo.gl/NhBShL1aFeL7tKD29" target="_blank" rel="noopener">
+                [Google Map Link]
+            </a>
+             <br> 时间：2025 年 11 月 9 日（星期日）中午 12 点
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="dot-block">
+        <div class="dot">🍛</div>
+        <div class="year">2025 <br> Dec </div>
+      </div>
+      <div class="content">
+        <h3>古晋婚礼晚宴</h3>
+        <p>
+            <img src="images/event6.jpg" alt="Dinner" />
+            欢迎出席我们的婚礼晚宴，地点为古晋帝宫大酒店（Boulevard Imperial Hotel Kuching）。
+            <a href="https://maps.app.goo.gl/CmEpRHC9SfNSa7MV7" target="_blank" rel="noopener">
+                [Google Map Link]
+            </a>
+            时间：2025 年 12 月 14 日（星期日）傍晚 6 点半
+        </p>
+      </div>
+    </div>
+  </section>
+    
+  <!-- Contact -->
+<section id="bride-groom" class="bride-groom-section">
+  <div class="person left">
+    <img src="images/bride_small.jpg" alt="Bride Photo" />
+    <h3>诗颖</h3>
+    <!-- <p>Email: <a href="mailto:abc@example.com">abc@example.com</a></p> -->
+    <p>📱: <a href="tel:+60149126560">+60 14-912 6560</a></p>
+  </div>
+
+  <div class="person right">
+    <img src="images/groom_small.jpg" alt="Groom Photo" />
+    <h3>文凯</h3>
+    <!-- <p>Email: <a href="mailto:abc@example.com">abc@example.com</a></p> -->
+    <p>📱: <a href="tel:+60186689275">+60 18-668 9275</a></p>
+  </div>
+</section>
+    
+  <!-- RSVP Form -->
+  <section class="rsvp-section" id="rsvp">
+    <h2>你会来见证我们的幸福时刻吗？ 💌</h2>
+    <form id="feedback-form">
+      <label>姓名:</label>
+      <input type="text" name="name" required />
+
+      <label>电子邮箱（非必填）:</label>
+      <input type="email" name="email" />
+
+      <label>地点:</label>
+      <select name="choice" required>
+        <option value="">-- 选项 --</option>
+        <option value="Triang">直凉</option>
+        <option value="Kuching">古晋</option>
+        <option value="Sorry, Not able to make it">抱歉，我无法出席</option>
+      </select>
+
+      <label>人数：</label>
+      <input type="number" name="pax" min="1" max="10" required />
+
+      <label>餐饮选择:</label>
+      <select name="meal" required>
+        <option value="">-- 选项 --</option>
+        <option value="Non-Vege">非素食</option>
+        <option value="Vege">素食</option>
+      </select>
+
+      <label>祝福语:</label>
+      <textarea name="message" rows="4"></textarea>
+
+      <button type="submit">提交</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p style="text-align:center; padding: 2em;">Made with ❤️ by the happy couple</p>
+  </footer>
+
+  <script src="script.js"></script>
+</div>
+</body>
+</html>
